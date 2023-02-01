@@ -1,0 +1,35 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  --morado-1:#D4C3FA;
+  --morado-2:#B08AFF;
+  --morado-3:#3E1A8A;
+  --morado-4:#1B0B2A;
+  --morado-5:#0D0019;
+  --naranja-1: #FF5E5E;
+  --naranja-2: #FB1414;
+
+}
+body {
+  background-color: var(--morado-4);
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid var(--morado-3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--morado-3);
+  border-radius: 10px;
+}
