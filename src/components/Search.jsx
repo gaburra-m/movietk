@@ -1,13 +1,20 @@
 import React from "react";
 
-import search from "../search.svg";
+import searchIcon from "../search.svg";
 
-function Search() {
+function Search({ search, handleChange, handleSubmit }) {
   return (
-    <div className="search">
-      <img className="search__icon" src={search} alt="icono de buscar" />
-      <input className="search__inp" type="text" placeholder="Buscar..." />
-    </div>
+    <form className="search" onSubmit={handleSubmit}>
+      <img className="search__icon" src={searchIcon} alt="icono de buscar" />
+      <input
+        className="search__inp"
+        value={search}
+        onChange={handleChange}
+        name="query"
+        type="text"
+        placeholder="Avenger, Star Wars, The Matrix ..."
+      />
+    </form>
   );
 }
 

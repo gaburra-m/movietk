@@ -2,19 +2,19 @@
   width: 100%;
   margin: 0 auto;
 }
-.center{
+.center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.spaceb{
+.spaceb {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
- /* header */
-.header{
-  background-color: hsl(271, 100%, 5%, 0.75) ;
+/* header */
+.header {
+  background-color: hsl(271, 100%, 5%, 0.75);
   height: 4.5rem;
   border-bottom: 1px solid var(--morado-3);
   backdrop-filter: blur(8px);
@@ -24,75 +24,72 @@
   width: 100%;
   z-index: 1;
 }
-.container{
+.container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
-
-  
 }
-.gap{
+.gap {
   gap: 20px;
 }
-.logo{
+.logo {
   display: flex;
   align-items: center;
 }
-.logo__img{
+.logo__img {
   max-height: 2.5rem;
 }
 .logo__txt {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   color: var(--morado-1);
   text-decoration: none;
 }
-.search{
+.search {
   display: flex;
   align-items: center;
   border: 2px solid var(--morado-3);
   border-radius: 50px;
-  transition: border .3s ease;
+  transition: border 0.3s ease;
   width: 500px;
 }
 
-.search:hover{
+.search:hover {
   border: 2px solid var(--morado-2);
-
 }
-.search__icon{
+.search__icon {
   margin: 10px 5px 10px 20px;
 }
-.search__inp{
+.search__inp {
   background-color: transparent;
   border: none;
   color: var(--morado-1);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 10px 20px 10px 5px;
   width: 100%;
 }
-.search__inp::placeholder{
-  font-family: 'Montserrat', sans-serif;
+.search__inp::placeholder {
+  font-family: "Montserrat", sans-serif;
 }
-.search__inp:focus{
+.search__inp:focus {
   color: var(--morado-1);
   outline: none;
 }
 
 /* Body */
-.top{
-  margin-top: 6rem;
+.top {
+  margin-top: 7rem;
 }
 h2 {
   font-size: calc(1.5em + 1vw);
 }
-.gradient{
-  background: linear-gradient(to right, var(--morado-2),var(--naranja-1));
+.gradient {
+  background: linear-gradient(to right, var(--morado-2), var(--naranja-1));
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
-.gradientG{
-  background: linear-gradient(to right, #92e709,#63daf8);
+.gradientG {
+  background: linear-gradient(to right, #92e709, #63daf8);
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -105,27 +102,27 @@ h2 {
   display: grid;
   grid-auto-columns: 10fr;
   grid-auto-flow: column;
-  gap: .8rem;
+  gap: 0.8rem;
 }
-.card{
+.card {
   background-color: var(--morado-5);
   border: 3px solid transparent;
   border-radius: 10px;
   margin-bottom: 1rem;
   width: 187px;
 }
-.card:hover{
+.card:hover {
   border: 3px solid var(--morado-2);
 }
-.card__img{
+.card__img {
   border-radius: 6px 6px 0 0;
   width: 187px;
   height: 280px;
 }
-.card__info{
+.card__info {
   position: relative;
 }
-.card__vote{
+.card__vote {
   background-color: var(--morado-4);
   border: 2px solid var(--morado-1);
   border-radius: 50px;
@@ -137,9 +134,9 @@ h2 {
   right: 0;
   top: -50px;
 }
-.card__title{
-  font-size: .8rem;
-  margin: .9rem .5rem;
+.card__title {
+  font-size: 0.8rem;
+  margin: 0.9rem 0.5rem;
   font-weight: normal;
   padding: 5px 0 0 0;
 }
@@ -148,28 +145,29 @@ h2 {
   /* -webkit-overflow-scrolling: touch;
   white-space: nowrap; */
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(165px, 1fr) );
-  gap: .8rem;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 0.8rem;
 }
-.cardR{
+.cardR {
   background-color: var(--morado-5);
   border: 3px solid transparent;
   border-radius: 10px;
   margin-bottom: 1rem;
   width: 165px;
+  list-style: none;
 }
-.cardR:hover{
+.cardR:hover {
   border: 3px solid var(--morado-2);
 }
-.cardR__img{
+.cardR__img {
   border-radius: 6px 6px 0 0;
   width: 165px;
   height: 247px;
 }
-.cardR__info{
+.cardR__info {
   position: relative;
 }
-.cardR__vote{
+.cardR__vote {
   background-color: var(--morado-4);
   border: 2px solid var(--morado-1);
   border-radius: 50px;
@@ -181,19 +179,19 @@ h2 {
   right: 0;
   top: -50px;
 }
-.cardR__title{
-  font-size: .8rem;
-  margin: .9rem .5rem;
+.cardR__title {
+  font-size: 0.8rem;
+  margin: 0.9rem 0.5rem;
   font-weight: normal;
   padding: 5px 0 0 0;
 }
 
 @media screen and (max-width: 480px) {
-  .container{
-      padding: 0 30px;
+  .container {
+    padding: 0 30px;
   }
-  .search{
-      width: 50%;
+  .search {
+    width: 50%;
   }
   /* .gridR{
     justify-items: center;
