@@ -7,7 +7,7 @@ import { SearchedMovies } from "./components/SearchedMovies";
 import "./App.css";
 
 function App() {
-  const { search, updateSearch, error, isSearch, setIsSearch } = useSearch();
+  const { search, updateSearch, isSearch, setIsSearch } = useSearch();
   const { movies, getMovies, loading } = useMovies({ search });
 
   const debouncedGetMovies = useCallback(
@@ -38,7 +38,7 @@ function App() {
       <main>
         {isSearch ? (
           loading ? (
-            <p>Cargando...</p>
+            <p className="container top">Cargando...</p>
           ) : (
             <SearchedMovies movies={movies} />
           )

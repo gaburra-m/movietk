@@ -30,7 +30,14 @@ function ListOfMovies({ movies }) {
 }
 
 function NoMoviesResult() {
-  return <p>No se encontraron resultados</p>;
+  return (
+    <section className="container top">
+      <h2 className="gradient">Resultado de la Busqueda</h2>
+      <div className="gridR">
+        <p>No se encontraron resultados</p>
+      </div>
+    </section>
+  );
 }
 
 export function SearchedMovies({ movies }) {

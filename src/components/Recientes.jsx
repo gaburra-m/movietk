@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Reciente from "./Reciente";
+import { options } from "../services/options";
 
 function Recientes() {
   const [latest, setLatest] = useState([]);
@@ -7,7 +8,8 @@ function Recientes() {
   async function fetchDatas() {
     try {
       const response = await fetch(
-        "https://api.themoviedb.org/3/movie/upcoming?api_key=7130173604be6a6628d06ec376286c72&language=es-MX"
+        "https://api.themoviedb.org/3/movie/upcoming?language=es-MX&page=1",
+        options
       );
       if (response.status === 200) {
         const data = await response.json();

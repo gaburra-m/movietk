@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Popular from "./Popular";
+import { options } from "../services/options";
 
 function Populares() {
   const [populars, setPopulars] = useState([]);
@@ -8,7 +9,8 @@ function Populares() {
     async function fetchData() {
       try {
         const response = await fetch(
-          "https://api.themoviedb.org/3/movie/popular?api_key=7130173604be6a6628d06ec376286c72&language=es-MX"
+          "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1",
+          options
         );
 
         if (response.status === 200) {
