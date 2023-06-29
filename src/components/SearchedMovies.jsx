@@ -1,6 +1,6 @@
 function ListOfMovies({ movies }) {
   const IMG_URL = "https://image.tmdb.org/t/p/w500/";
-  const NO_POSTER = "/movietk/no_poster.jpg";
+  const NO_POSTER = "/movietk/img/no_poster.jpg";
   return (
     <section className="container top">
       <h2 className="gradient">Resultado de la Busqueda</h2>

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useCallback } from "react";
 import { Header, Populares, Recientes, Footer } from "./components";
 import { useMovies } from "./hooks/useMovies";
