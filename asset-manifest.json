@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/movietk/static/css/main.5e40f268.css",
-    "main.js": "/movietk/static/js/main.f8961c5e.js",
+    "main.js": "/movietk/static/js/main.0861991a.js",
     "static/js/787.b731ba98.chunk.js": "/movietk/static/js/787.b731ba98.chunk.js",
     "static/media/search.svg": "/movietk/static/media/search.5d29d5ef10b0ea4151f1ddb545a62058.svg",
     "static/media/logo.svg": "/movietk/static/media/logo.96fecc885ac23faef3dd1832a05d2d1b.svg",
     "index.html": "/movietk/index.html",
     "main.5e40f268.css.map": "/movietk/static/css/main.5e40f268.css.map",
-    "main.f8961c5e.js.map": "/movietk/static/js/main.f8961c5e.js.map",
+    "main.0861991a.js.map": "/movietk/static/js/main.0861991a.js.map",
     "787.b731ba98.chunk.js.map": "/movietk/static/js/787.b731ba98.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e40f268.css",
-    "static/js/main.f8961c5e.js"
+    "static/js/main.0861991a.js"
   ]
 }
